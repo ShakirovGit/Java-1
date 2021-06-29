@@ -48,9 +48,5 @@ public class Shakirov {
         if (shareAverage > 3) {
             System.out.println("Программа выполнена корректно");
         }
-
-
-
-
     }
 }
