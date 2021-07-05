@@ -42,11 +42,11 @@ public class Shakirov {
         }
         */
         //Задача 5
-        /*
+
         //пункт 1
         Scanner scannerForCals = new Scanner(System.in);
-        int numFirst = scannerForCals.nextInt();
-        int numSecond = scannerForCals.nextInt();
+        double numFirst = scannerForCals.nextInt();
+        double numSecond = scannerForCals.nextInt();
         String symbol = scannerForCals.next();
         //пункт 2
         switch (symbol) {
@@ -69,7 +69,7 @@ public class Shakirov {
             default:
                 System.out.println("Я так не умею =(");
         }
-        */
+        /*
         //Задача 6
         Scanner scannerConv = new Scanner(System.in);
 
@@ -155,6 +155,6 @@ public class Shakirov {
             }
         } else {
             System.out.println("Нужно выбрать 1 или 2");
-        }
+        }*/
     }
 }
