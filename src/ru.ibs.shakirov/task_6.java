@@ -2,76 +2,8 @@ package ru.ibs.shakirov;
 
 import java.util.Scanner;
 
-public class Shakirov {
+public class task_6 {
     public static void main(String[] args) {
-        /*
-        //Задача 1
-        System.out.print("Hello World!");
-
-        //Задача 2
-        double d = 3.17543545;
-        byte b = 127;
-
-        //Задача 3
-        int[] arrNum = {1, 2, 3, 4, 5};
-
-        int firstNum = arrNum[0];
-        int lastNum = arrNum[arrNum.length - 1];
-        arrNum[0] = lastNum;
-        arrNum[arrNum.length -1] = firstNum;
-
-        System.out.println(arrNum[0] + arrNum[arrNum.length / 2]);
-        */
-        //Задача 4
-        /*
-        //пункт 1
-        Scanner scannerForAverage = new Scanner(System.in);
-        double numX = scannerForAverage.nextDouble();
-        double numY = scannerForAverage.nextDouble();
-        double numZ = scannerForAverage.nextDouble();
-        scannerForAverage.close();
-        //пункт 2
-        double average = (numX + numY + numZ) / 3;
-        System.out.println(average);
-        //пункт 3
-        double shareAverage = Math.floor(average / 2);
-        System.out.println(shareAverage);
-        //пункт 4
-        if (shareAverage > 3) {
-            System.out.println("Программа выполнена корректно");
-        }
-        */
-        /*
-        //Задача 5
-
-        //пункт 1
-        Scanner scannerForCals = new Scanner(System.in);
-        double numFirst = scannerForCals.nextInt();
-        double numSecond = scannerForCals.nextInt();
-        String symbol = scannerForCals.next();
-        //пункт 2
-        switch (symbol) {
-            case "+":
-                System.out.println(numFirst + numSecond);
-                break;
-            case "-":
-                System.out.println(numFirst - numSecond);
-                break;
-            case "*":
-                System.out.println(numFirst * numSecond);
-                break;
-            case "/":
-                if (numFirst == 0 || numSecond == 0) {
-                    System.out.println("На ноль делить не буду");
-                } else {
-                    System.out.println(numFirst / numSecond);
-                }
-                break;
-            default:
-                System.out.println("Я так не умею =(");
-        }
-        */
-        //Задача 6
         Scanner scannerConv = new Scanner(System.in);
 
         int physicalQuantity, unit;
@@ -123,7 +55,7 @@ public class Shakirov {
 
             if (unit >= 1 && unit <= 4) {
                 System.out.println("Введите число");
-                number = scannerConv.nextInt();
+                number = scannerConv.nextDouble();
 
                 switch (unit) {
                     case 1:
