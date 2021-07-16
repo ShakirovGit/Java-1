@@ -6,11 +6,12 @@ public class task_11 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+
         String strNum = scanner.next();
         int intNum = scanner.nextInt();
         double doubleNum;
 
-        if (Integer.parseInt(strNum) > intNum) {
+        if (Double.parseDouble(strNum) > intNum) {
             System.out.println(strNum);
             doubleNum = intNum;
         } else {

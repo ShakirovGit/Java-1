@@ -14,7 +14,7 @@ public class Final_task_4 {
 
         System.out.println("Отдгадай загадку - Сидит дед, во сто шуб одет, кто его раздевает, тот слезы проливает");
 
-        while (true) {
+        do {
             answer = scanner.nextLine();
 
             if (answer.equals(help) && count == 0) {
@@ -22,27 +22,24 @@ public class Final_task_4 {
                 getHelp = true;
                 answer = scanner.nextLine();
             }
-            if (answer.equals(help) && !(count == 0)) {
+            if (answer.equals(help) && count != 0) {
                 System.out.println("Подсказка уже недоступна");
             }
 
             if (answer.equals(correctAnswer)){
                 System.out.println("Правильно!");
                 finish = true;
-                break;
             }
-            if (count < 2 && finish == false && getHelp == false){
+            if (count < 3 && !finish && !getHelp){
                 System.out.println("Подумай еще!");
                 count++;
-            } else {
-                break;
             }
-        }
+            if (count == 3){
+                System.out.println("Обидно, приходи в другой раз");
+                finish = true;
+            }
+        } while (!finish);
+
         scanner.close();
-
-        if (finish == false) {
-            System.out.println("Обидно, приходи в другой раз");
-        }
-
     }
 }
