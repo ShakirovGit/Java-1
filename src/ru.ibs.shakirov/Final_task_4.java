@@ -22,22 +22,27 @@ public class Final_task_4 {
                 getHelp = true;
                 answer = scanner.nextLine();
             }
+
             if (answer.equals(help) && count != 0) {
                 System.out.println("Подсказка уже недоступна");
+                count--;
             }
 
             if (answer.equals(correctAnswer)){
                 System.out.println("Правильно!");
-                finish = true;
+                break;
             }
-            if (count < 3 && !finish && !getHelp){
+
+            if (count < 2 && !finish && !getHelp){
                 System.out.println("Подумай еще!");
-                count++;
             }
-            if (count == 3){
+
+            if (count == 2 || getHelp){
                 System.out.println("Обидно, приходи в другой раз");
                 finish = true;
             }
+            count++;
+
         } while (!finish);
 
         scanner.close();
